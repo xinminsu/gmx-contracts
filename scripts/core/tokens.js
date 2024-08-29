@@ -98,6 +98,42 @@ module.exports = {
       decimals: 18,
     },
   },
+  localhost: {
+    btcPriceFeed: { address: "0x4949ed642d951Eb683Ea7B51C71BbF719F4e882B" },
+    ethPriceFeed: { address: "0x580D5018E2333Dd8eF41285C40D6b48b64F0E541" },
+    bnbPriceFeed: { address: "0x85240C3dD3D4474516cFBAd6c23B6ACbe7ca79FF" },
+    busdPriceFeed: { address: "0x6A84c79FD297e107Aa1fA8697692fE2CE78EAa84" },
+    usdcPriceFeed: { address: " 0x4412d19bA71F2724bc0de5d2B468C9c01FF9C104" },
+    usdtPriceFeed: { address: "0x14B66564D281f2fDa93BFEA072a4049b54a5a314" },
+    btc: {
+      address: "0x154aF8eD6Fc1F71B94dDf3c12672C9757430615d",
+      decimals: 18,
+    },
+    eth: {
+      address: "0x9AcCF97D531a26fF8f8Bc11A432BBf1a0A8cf3DA",
+      decimals: 18,
+    },
+    bnb: {
+      address: "0x5bc80fdfc07Feb70ae1c135EfEF61b81E6D4e606",
+      decimals: 18,
+    },
+    busd: {
+      address: "0x826e93922fEA0c0E1d26bba5a65725ECEF5edF89",
+      decimals: 18,
+    },
+    usdc: {
+      address: "0x1C69e6EfC8043c4D7B891f11147a798D0aF7865B",
+      decimals: 18,
+    },
+    usdt: {
+      address: "0x6F5D6eeEB596DCE58c17E71F274E59DA66D6691f",
+      decimals: 18,
+    },
+    nativeToken: {
+      address: "0xEbE6B43b8bBE6c32F11B2ED820c18256bbECFf6E",
+      decimals: 18,
+    },
+  },
   arbitrumTestnet: {
     // https://docs.chain.link/docs/arbitrum-price-feeds/
     btcPriceFeed: { address: "0x0c9973e7a27d00e656B9f153348dA46CaD70d03d" },
