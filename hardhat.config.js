@@ -2,6 +2,7 @@ require("@nomiclabs/hardhat-waffle")
 require("@nomiclabs/hardhat-etherscan")
 require("hardhat-contract-sizer")
 require('@typechain/hardhat')
+require("@nomicfoundation/hardhat-foundry");
 
 const {
   BSC_URL,
@@ -52,6 +53,13 @@ task("processFees", "Processes fees")
   .setAction(async (taskArgs) => {
     const { processFees } = require("./scripts/core/processFees")
     await processFees(taskArgs)
+  })
+
+task("distributeFees", "Distribute fees")
+  .addParam("steps", "The steps to run")
+  .setAction(async (taskArgs) => {
+    const { distributeFees } = require("./scripts/fees/distributeFees")
+    await distributeFees(taskArgs)
   })
 
 // You need to export an object to set up your config
