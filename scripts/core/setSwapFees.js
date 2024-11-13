@@ -8,7 +8,7 @@ async function main() {
     vault = await contractAt("Vault", "0x9ab2De34A33fB459b538c43f251eB825645e8595")
   }
   if (network === "arbitrum") {
-    vault = await contractAt("Vault", "0x489ee077994B6658eAfA855C308275EAd8097C4A")
+    vault = await contractAt("Vault", "0x46198Cf18E114B76C84199736cd0dFF703D532A9")
   }
 
   const timelock = await contractAt("Timelock", await vault.gov())

@@ -6,10 +6,10 @@ const network = (process.env.HARDHAT_NETWORK || 'mainnet');
 const tokens = require('./tokens')[network];
 
 async function getArbValues() {
-  const vault = { address: "0x489ee077994B6658eAfA855C308275EAd8097C4A" }
-  const usdg = { address: "0x45096e7aA921f27590f8F19e457794EB09678141" }
-  const glp = { address: "0x4277f8F2c384827B5273592FF7CeBd9f2C1ac258" }
-  const shortsTracker = { address: "0xf58eEc83Ba28ddd79390B9e90C4d3EbfF1d434da" }
+  const vault = { address: "0x46198Cf18E114B76C84199736cd0dFF703D532A9" }
+  const usdg = { address: "0xBC08B53ba94548194e7a643364773081A923EA0B" }
+  const glp = { address: "0x2b8757c8B6BD5D614cbF6c585B8d0e736a1AB77b" }
+  const shortsTracker = { address: "0x2f30C6d3807134eC0F036887553E2558C6AB039F" }
 
   return { vault, usdg, glp, shortsTracker }
 }

@@ -24,7 +24,7 @@ async function getArbValues() {
     serverHost: "https://gmx-server-mainnet.uw.r.appspot.com",
     serverAdminApiKey: ARBITRUM_SERVER_ADMIN_API_KEY,
     vaultAddress: "0x489ee077994b6658eafa855c308275ead8097c4a",
-    shortsTrackerAddress: "0xf58eEc83Ba28ddd79390B9e90C4d3EbfF1d434da",
+    shortsTrackerAddress: "0x2f30C6d3807134eC0F036887553E2558C6AB039F",
     indexTokens: {
       "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1": "WETH",
       "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f": "BTC",

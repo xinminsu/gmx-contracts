@@ -7,7 +7,7 @@ const tokens = require('./tokens')[network];
 
 async function main() {
   const gov = await contractAt("Timelock", "0xa870b459ba1f206bbcb0df90ef887b19fcde66ae")
-  const vaultPriceFeed = await contractAt("VaultPriceFeed", "0x82b1fa2741a6591d30e61830b1cfda0e7ba3abd3")
+  const vaultPriceFeed = await contractAt("VaultPriceFeed", "0x4250d4B79B4bB17c973b242D6D3dA5714145F9A3")
   const tokenKeys = ["btc", "eth", "bnb"]
 
   for (let i = 0; i < tokenKeys.length; i++) {

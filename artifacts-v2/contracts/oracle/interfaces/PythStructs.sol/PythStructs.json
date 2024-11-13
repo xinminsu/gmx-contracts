@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "PythStructs",
+  "sourceName": "contracts/oracle/interfaces/PythStructs.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212204e0e606be97ac6b4c4ce9f09b8e0b4c2d478313ca95b7fa7e0433c8bcb0b966c64736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212204e0e606be97ac6b4c4ce9f09b8e0b4c2d478313ca95b7fa7e0433c8bcb0b966c64736f6c634300060c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

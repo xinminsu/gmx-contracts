@@ -11,10 +11,10 @@ async function main() {
 
   // Arbitrum mainnet addresses
   await sendTxn(orderBook.initialize(
-    "0x5F719c2F1095F7B9fc68a68e35B51194f4b6abe8", // router
-    "0x9ab2De34A33fB459b538c43f251eB825645e8595", // vault
+    "0x8e013B0814361278B38066fd8d8A541A273dc610", // router
+    "0x46198Cf18E114B76C84199736cd0dFF703D532A9", // vault
     nativeToken.address, // weth
-    "0xc0253c3cC6aa5Ab407b5795a04c28fB063273894", // usdg
+    "0xBC08B53ba94548194e7a643364773081A923EA0B", // usdg
     "10000000000000000", // 0.01 AVAX
     expandDecimals(10, 30) // min purchase token amount usd
   ), "orderBook.initialize");

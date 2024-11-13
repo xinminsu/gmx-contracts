@@ -2,10 +2,10 @@ const { contractAt , sendTxn, callWithRetries } = require("../shared/helpers")
 const { expandDecimals } = require("../../test/shared/utilities")
 
 async function main() {
-  const router = await callWithRetries(contractAt, ["Router", "0x526f42EA12E167E36E3De747187f53b6989d121A"])
+  const router = await callWithRetries(contractAt, ["Router", "0x8e013B0814361278B38066fd8d8A541A273dc610"])
 
   await sendTxn(callWithRetries(router.addPlugin.bind(router), [
-    "0x84B1FEA4A2c1e0C07f34755ac4cf5aD26a07485d"
+    "0x4d31c9082A1BC9f81AcC661DE1232125e59F6Dc0"
   ]), "router.addPlugin")
 }
 

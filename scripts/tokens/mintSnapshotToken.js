@@ -17,7 +17,7 @@ const processFile = async (dir, file) => {
 }
 
 async function main() {
-  const token = await contractAt("SnapshotToken", "0xf3674f065301e0866715dd094bc7a51397e457f3")
+  const token = await contractAt("SnapshotToken", "0x35E33382e58F87408F74044e85Dc783F8aC01918")
   const snapshotFile = "snapshotBalance1.csv"
   const dir = "./data/snapshotBalance"
 

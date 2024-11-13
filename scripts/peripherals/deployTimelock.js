@@ -5,17 +5,17 @@ const { expandDecimals } = require("../../test/shared/utilities")
 const network = (process.env.HARDHAT_NETWORK || 'mainnet');
 
 async function getArbValues() {
-  const vault = await contractAt("Vault", "0x489ee077994B6658eAfA855C308275EAd8097C4A")
-  const tokenManager = { address: "0xddDc546e07f1374A07b270b7d863371e575EA96A" }
-  const glpManager = { address: "0x3963FfC9dff443c2A94f21b129D429891E32ec18" }
-  const prevGlpManager = { address: "0x321F653eED006AD1C29D174e17d96351BDe22649" }
-  const rewardRouter = { address: "0x159854e14A862Df9E39E1D128b8e5F70B4A3cE9B" }
+  const vault = await contractAt("Vault", "0x46198Cf18E114B76C84199736cd0dFF703D532A9")
+  const tokenManager = { address: "0xD85bCf95F50e39106F2F28B03F092247Fbe60DeD" }
+  const glpManager = { address: "0x1a9788574b320F73C0aa0182B0d321F3c2A5DC9b" }
+  const prevGlpManager = { address: "0x4Cc0c66704E5BC2c18209BAdBcE29d3e559fe9Db" }
+  const rewardRouter = { address: "0x50BA9F8c29d3c168EDf39afD3ef0949f93F9d210" }
 
-  const positionRouter = { address: "0xb87a436B93fFE9D75c5cFA7bAcFff96430b09868" }
-  const positionManager = { address: "0x75E42e6f01baf1D6022bEa862A28774a9f8a4A0C" }
-  const gmx = { address: "0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a" }
+  const positionRouter = { address: "0x3aF8Faa456EE61ab140A0b92f08D99E277f85514" }
+  const positionManager = { address: "0xb1CE3330e2B8627d1Bc2d3dA43E6560b16543449" }
+  const gmx = { address: "0xce99b5ED4E52cB26E4a0978eA891e117e27093Fd" }
 
-  const feeHandler = { address: "0x7cC506C8d711C2A17B61A75bd082d2514160baAd" }
+  const feeHandler = { address: "0x9e54E2c95E37f332d3dC67Dd716edC1ce5EFbC69" }
 
   return {
     vault,
@@ -34,7 +34,7 @@ async function getAvaxValues() {
   const vault = await contractAt("Vault", "0x9ab2De34A33fB459b538c43f251eB825645e8595")
   const tokenManager = { address: "0x8b25Ba1cAEAFaB8e9926fabCfB6123782e3B4BC2" }
   const glpManager = { address: "0xD152c7F25db7F4B95b7658323c5F33d176818EE4" }
-  const prevGlpManager = { address: "0xe1ae4d4b06A5Fe1fc288f6B4CD72f9F8323B107F" }
+  const prevGlpManager = { address: "0x11744802E386FBFb6D6c1485877ce9d737C6FF40" }
   const rewardRouter = { address: "0x0000000000000000000000000000000000000000" }
 
   const positionRouter = { address: "0xffF6D276Bc37c61A23f06410Dce4A400f66420f8" }
@@ -67,7 +67,7 @@ async function getValues() {
 }
 
 async function main() {
-  const admin = "0x49B373D422BdA4C6BfCdd5eC1E48A9a26fdA2F8b"
+  const admin = "0x04A7Df5bb513010C7F16d862C3af357cAEdA32F0"
   const buffer = 24 * 60 * 60
   // the GmxTimelock should have a cap of 13.25m tokens, for other tokens
   // like Multiplier Points, the supply may exceed 13.25m tokens
@@ -110,10 +110,10 @@ async function main() {
   multicallWriteParams.push(deployedTimelock.interface.encodeFunctionData("setFeeHandler", [feeHandler.address, true]));
 
   const handlers = [
-    "0x82429089e7c86B7047b793A9E7E7311C93d2b7a6", // coinflipcanada
-    "0xD7941C4Ca57a511F21853Bbc7FBF8149d5eCb398", // G
-    "0xfb481D70f8d987c1AE3ADc90B7046e39eb6Ad64B", // kr
-    "0x6091646D0354b03DD1e9697D33A7341d8C93a6F5" // xhiroz
+    "0xC0557CFe9e654Bee1b6B5062Fb08436a4869d064", // coinflipcanada
+    "0xEEcA3bdf50676E3a3aB2b25dB3903Bcf325c6e03", // G
+    "0x975852aebb519BA42c38dF572148C8232F230a0C", // kr
+    "0xF107677589F1483ceD3Ee63630E55087A40feF52" // xhiroz
   ]
 
   for (let i = 0; i < handlers.length; i++) {
@@ -122,7 +122,7 @@ async function main() {
   }
 
   const keepers = [
-    "0x5F799f365Fa8A2B60ac0429C48B153cA5a6f0Cf8" // X
+    "0x439Dd79a3bD74CCf427769107f368218320bEEBb" // X
   ]
 
   for (let i = 0; i < keepers.length; i++) {

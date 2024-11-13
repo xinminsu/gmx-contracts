@@ -73,21 +73,21 @@ async function getPool(tokenAddress0, tokenAddress1, fees) {
 
 async function main() {
   // const reader = await contractAt("Reader", "0xbD8F00AabeC361ce52486431433FB196c53C5101")
-  // const vault = await contractAt("Vault", "0xDE3590067c811b6F023b557ed45E4f1067859663")
+  // const vault = await contractAt("Vault", "0x46198Cf18E114B76C84199736cd0dFF703D532A9")
   // const weth = { address: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1" }
   // const usdc = { address: "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8" }
   // const gmx = { address: "0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a" }
   // const tokens = ["0x82aF49447D8a07e3bd95BD0d56f35241523fBab1", "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f"]
   // const usdgAmount = expandDecimals(1, 18)
-  // const glpManager = await contractAt("GlpManager", "0x91425Ac4431d068980d497924DD540Ae274f3270")
+  // const glpManager = await contractAt("GlpManager", "0x1a9788574b320F73C0aa0182B0d321F3c2A5DC9b")
 
   // await readGlpManager(glpManager)
 
   // await getPool(weth.address, usdc.address, 500)
   // await getPool(weth.address, gmx.address, 10000)
 
-  const vault = await contractAt("Vault", "0x489ee077994B6658eAfA855C308275EAd8097C4A")
-  const glpManager = await contractAt("GlpManager", "0x321F653eED006AD1C29D174e17d96351BDe22649")
+  const vault = await contractAt("Vault", "0x46198Cf18E114B76C84199736cd0dFF703D532A9")
+  const glpManager = await contractAt("GlpManager", "0x1a9788574b320F73C0aa0182B0d321F3c2A5DC9b")
   let startTime = Date.now()
   await vault.getMinPrice("0x82aF49447D8a07e3bd95BD0d56f35241523fBab1")
   console.log("vault.getMinPrice", Date.now() - startTime)

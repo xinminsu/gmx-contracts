@@ -104,8 +104,8 @@ async function getInfoTokens(vault, reader, nativeToken, tokenArr) {
 async function getArbFeeValues() {
   const signer = signers.arbitrum
   const dataStore = new ethers.Contract("0xFD70de6b91282D8017aA4E741e9Ae325CAb992d8", DataStore.abi, providers.arbitrum)
-  const vault = await contractAt("Vault", "0x489ee077994B6658eAfA855C308275EAd8097C4A", signer)
-  const reader = await contractAt("Reader", "0x2b43c90D1B727cEe1Df34925bcd5Ace52Ec37694", signer)
+  const vault = await contractAt("Vault", "0x46198Cf18E114B76C84199736cd0dFF703D532A9", signer)
+  const reader = await contractAt("Reader", "0xD8BA8174749Cb5Cb6F19fe3f1A90C937272B9632", signer)
   const gmx = await contractAt("GMX", "0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a", signer)
 
   const tokens = allTokens.arbitrum

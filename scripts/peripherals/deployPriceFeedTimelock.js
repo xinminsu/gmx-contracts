@@ -28,7 +28,7 @@ async function getValues() {
 async function main() {
   const signer = await getFrameSigner()
 
-  const admin = "0x49B373D422BdA4C6BfCdd5eC1E48A9a26fdA2F8b"
+  const admin = "0x04A7Df5bb513010C7F16d862C3af357cAEdA32F0"
   const buffer = 24 * 60 * 60
 
   const { tokenManager } = await getValues()
@@ -42,11 +42,11 @@ async function main() {
   const deployedTimelock = await contractAt("PriceFeedTimelock", timelock.address, signer)
 
   const signers = [
-    "0x82429089e7c86B7047b793A9E7E7311C93d2b7a6", // coinflipcanada
-    "0xD7941C4Ca57a511F21853Bbc7FBF8149d5eCb398", // G
-    "0xfb481D70f8d987c1AE3ADc90B7046e39eb6Ad64B", // kr
+    "0xC0557CFe9e654Bee1b6B5062Fb08436a4869d064", // coinflipcanada
+    "0xEEcA3bdf50676E3a3aB2b25dB3903Bcf325c6e03", // G
+    "0x975852aebb519BA42c38dF572148C8232F230a0C", // kr
     "0x99Aa3D1b3259039E8cB4f0B33d0Cfd736e1Bf49E", // quat
-    "0x6091646D0354b03DD1e9697D33A7341d8C93a6F5" // xhiroz
+    "0xF107677589F1483ceD3Ee63630E55087A40feF52" // xhiroz
   ]
 
   for (let i = 0; i < signers.length; i++) {

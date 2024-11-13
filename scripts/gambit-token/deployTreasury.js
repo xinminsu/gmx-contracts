@@ -5,9 +5,9 @@ const PRECISION = 1000000
 
 async function main() {
   const treasury = await contractAt("Treasury", "0xa44E7252a0C137748F523F112644042E5987FfC7")
-  const gmt = await contractAt("GMT", "0x99e92123eB77Bc8f999316f622e5222498438784")
+  const gmt = await contractAt("GMT", "0xFC9d680b22a9c992fdff80ad90EB75D2ecCcF3aD")
   const busd = await contractAt("Token", "0xe9e7cea3dedca5984780bafc599bd69add087d56")
-  const router = { address: "0x05ff2b0db69458a0750badebc4f9e13add608c7f" }
+  const router = { address: "0x8e013B0814361278B38066fd8d8A541A273dc610" }
   const fund = { address: "0x58CAaCa45a213e9218C5fFd605d5B953da9b9a91" }
   const gmtPresalePrice = 4.5 * PRECISION
   const gmtListingPrice = 5 * PRECISION

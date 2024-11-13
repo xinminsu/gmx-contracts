@@ -46,8 +46,8 @@ async function withdrawFeesArb() {
   const provider = new ethers.providers.JsonRpcProvider(ARBITRUM_URL);
   const wallet = new ethers.Wallet(ARBITRUM_DEPLOY_KEY).connect(provider);
 
-  const receiver = { address: "0x49B373D422BdA4C6BfCdd5eC1E48A9a26fdA2F8b" }
-  const vault = await contractAt("Vault", "0x489ee077994B6658eAfA855C308275EAd8097C4A", wallet)
+  const receiver = { address: "0x04A7Df5bb513010C7F16d862C3af357cAEdA32F0" }
+  const vault = await contractAt("Vault", "0x46198Cf18E114B76C84199736cd0dFF703D532A9", wallet)
   const gov = await contractAt("Timelock", await vault.gov(), wallet)
   const tokens = require('./tokens')["arbitrum"];
   const { btc, eth, usdce, usdc, link, uni, usdt, mim, frax, dai } = tokens
@@ -73,7 +73,7 @@ async function withdrawFeesAvax() {
   const provider = new ethers.providers.JsonRpcProvider(AVAX_URL);
   const wallet = new ethers.Wallet(AVAX_DEPLOY_KEY).connect(provider);
 
-  const receiver = { address: "0x49B373D422BdA4C6BfCdd5eC1E48A9a26fdA2F8b" }
+  const receiver = { address: "0x04A7Df5bb513010C7F16d862C3af357cAEdA32F0" }
   const vault = await contractAt("Vault", "0x9ab2De34A33fB459b538c43f251eB825645e8595", wallet)
   const gov = await contractAt("Timelock", await vault.gov(), wallet)
   const tokens = require('./tokens')["avax"];

@@ -4,16 +4,16 @@ const { expandDecimals } = require("../../test/shared/utilities")
 const network = (process.env.HARDHAT_NETWORK || 'mainnet');
 
 async function getArbValues() {
-  const vault = await contractAt("Vault", "0x489ee077994B6658eAfA855C308275EAd8097C4A")
+  const vault = await contractAt("Vault", "0x46198Cf18E114B76C84199736cd0dFF703D532A9")
 
   const addresses = [
     ["vault", vault.address],
-    ["glpManager", "0x321F653eED006AD1C29D174e17d96351BDe22649"],
-    ["glp", "0x4277f8F2c384827B5273592FF7CeBd9f2C1ac258"],
-    ["gmx", "0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a"],
-    ["esGmx", "0xf42Ae1D54fd613C9bb14810b0588FaAa09a426cA"],
-    ["bnGmx", "0x35247165119B69A40edD5304969560D0ef486921"],
-    ["usdg", "0x45096e7aA921f27590f8F19e457794EB09678141"],
+    ["glpManager", "0x1a9788574b320F73C0aa0182B0d321F3c2A5DC9b"],
+    ["glp", "0x2b8757c8B6BD5D614cbF6c585B8d0e736a1AB77b"],
+    ["gmx", "0xce99b5ED4E52cB26E4a0978eA891e117e27093Fd"],
+    ["esGmx", "0xCf9150779daB6E371fb4D39C34EeaA60766A601c"],
+    ["bnGmx", "0x11744802E386FBFb6D6c1485877ce9d737C6FF40"],
+    ["usdg", "0xBC08B53ba94548194e7a643364773081A923EA0B"],
     ["gmxVester", "0x199070DDfd1CFb69173aa2F7e20906F26B363004"],
     ["glpVester", "0xA75287d2f8b217273E7FCD7E86eF07D33972042E"],
   ]

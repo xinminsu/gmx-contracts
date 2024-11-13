@@ -10,9 +10,9 @@ async function main() {
   const { nativeToken } = tokens
 
   const vault = await deployContract("Vault", [])
-  // const vault = await contractAt("Vault", "0x489ee077994B6658eAfA855C308275EAd8097C4A")
+  // const vault = await contractAt("Vault", "0x46198Cf18E114B76C84199736cd0dFF703D532A9")
   const usdg = await deployContract("USDG", [vault.address])
-  // const usdg = await contractAt("USDG", "0x45096e7aA921f27590f8F19e457794EB09678141")
+  // const usdg = await contractAt("USDG", "0xBC08B53ba94548194e7a643364773081A923EA0B")
   const router = await deployContract("Router", [vault.address, usdg.address, nativeToken.address])
   // const router = await contractAt("Router", "0xaBBc5F99639c9B6bCb58544ddf04EFA6802F4064")
   // const vaultPriceFeed = await contractAt("VaultPriceFeed", "0x30333ce00ac3025276927672aaefd80f22e89e54")
@@ -26,7 +26,7 @@ async function main() {
 
   const glp = await deployContract("GLP", [])
   await sendTxn(glp.setInPrivateTransferMode(true), "glp.setInPrivateTransferMode")
-  // const glp = await contractAt("GLP", "0x4277f8F2c384827B5273592FF7CeBd9f2C1ac258")
+  // const glp = await contractAt("GLP", "0x2b8757c8B6BD5D614cbF6c585B8d0e736a1AB77b")
   const glpManager = await deployContract("GlpManager", [vault.address, usdg.address, glp.address, 15 * 60])
   await sendTxn(glpManager.setInPrivateMode(true), "glpManager.setInPrivateMode")
 

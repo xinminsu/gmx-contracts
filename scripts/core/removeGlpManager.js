@@ -10,11 +10,11 @@ async function main() {
     nativeToken
   } = tokens
 
-  const vault = await contractAt("Vault", "0xDE3590067c811b6F023b557ed45E4f1067859663")
-  const usdg = await contractAt("USDG", "0x45096e7aA921f27590f8F19e457794EB09678141")
-  const glp = await contractAt("GLP", "0x4277f8F2c384827B5273592FF7CeBd9f2C1ac258")
+  const vault = await contractAt("Vault", "0x46198Cf18E114B76C84199736cd0dFF703D532A9")
+  const usdg = await contractAt("USDG", "0xBC08B53ba94548194e7a643364773081A923EA0B")
+  const glp = await contractAt("GLP", "0x2b8757c8B6BD5D614cbF6c585B8d0e736a1AB77b")
 
-  const glpManager = await contractAt("GlpManager", "0x91425Ac4431d068980d497924DD540Ae274f3270")
+  const glpManager = await contractAt("GlpManager", "0x1a9788574b320F73C0aa0182B0d321F3c2A5DC9b")
 
   await sendTxn(glp.setMinter(glpManager.address, false), "glp.setMinter")
   await sendTxn(usdg.removeVault(glpManager.address), "usdg.removeVault")

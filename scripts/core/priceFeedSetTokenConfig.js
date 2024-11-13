@@ -8,7 +8,7 @@ const tokens = require('./tokens')[network];
 async function main() {
   const signer = await getFrameSigner()
 
-  const vault = await contractAt("Vault", "0x489ee077994B6658eAfA855C308275EAd8097C4A")
+  const vault = await contractAt("Vault", "0x46198Cf18E114B76C84199736cd0dFF703D532A9")
 
   const priceFeed = await contractAt("VaultPriceFeed", await vault.priceFeed())
   const priceFeedGov = await priceFeed.gov()

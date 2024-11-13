@@ -1,7 +1,7 @@
 const { deployContract, contractAt, writeTmpAddresses } = require("../shared/helpers")
 
 async function main() {
-  const gmx = { address: "0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a" }
+  const gmx = { address: "0xce99b5ED4E52cB26E4a0978eA891e117e27093Fd" }
   const wGmx = { address: "0x590020B1005b8b25f1a2C82c5f743c540dcfa24d" }
   await deployContract("Bridge", [gmx.address, wGmx.address], "Bridge")
 }

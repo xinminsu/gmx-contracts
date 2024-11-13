@@ -9,13 +9,13 @@ const tokens = require('./tokens')[network];
 const depositFee = 30 // 0.3%
 
 async function getArbValues(signer) {
-  const vault = await contractAt("Vault", "0x489ee077994B6658eAfA855C308275EAd8097C4A", signer)
+  const vault = await contractAt("Vault", "0x46198Cf18E114B76C84199736cd0dFF703D532A9", signer)
   const timelock = await contractAt("Timelock", await vault.gov(), signer)
   const router = await contractAt("Router", await vault.router(), signer)
-  const shortsTracker = await contractAt("ShortsTracker", "0xf58eEc83Ba28ddd79390B9e90C4d3EbfF1d434da", signer)
+  const shortsTracker = await contractAt("ShortsTracker", "0x2f30C6d3807134eC0F036887553E2558C6AB039F", signer)
   const weth = await contractAt("WETH", tokens.nativeToken.address)
-  const orderBook = await contractAt("OrderBook", "0x09f77E8A13De9a35a7231028187e9fD5DB8a2ACB")
-  const referralStorage = await contractAt("ReferralStorage", "0xe6fab3f0c7199b0d34d7fbe83394fc0e0d06e99d")
+  const orderBook = await contractAt("OrderBook", "0x0850a4f613DC6015f39944bC866534cD267FbE1d")
+  const referralStorage = await contractAt("ReferralStorage", "0x10504B85EC9a4001e9589955AAc73A926aebeaC5")
 
   const orderKeepers = [
     { address: "0xd4266F8F82F7405429EE18559e548979D49160F3" },

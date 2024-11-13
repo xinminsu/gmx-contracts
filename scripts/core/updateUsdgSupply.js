@@ -7,10 +7,10 @@ const tokens = require('./tokens')[network];
 
 // TODO: update timelock address
 async function getArbValues() {
-  const vault = await contractAt("Vault", "0x489ee077994B6658eAfA855C308275EAd8097C4A")
-  const glpManager = await contractAt("GlpManager", "0x3963FfC9dff443c2A94f21b129D429891E32ec18")
+  const vault = await contractAt("Vault", "0x46198Cf18E114B76C84199736cd0dFF703D532A9")
+  const glpManager = await contractAt("GlpManager", "0x1a9788574b320F73C0aa0182B0d321F3c2A5DC9b")
   const timelock = await contractAt("Timelock", "0xF3Cf3D73E00D3149BA25c55951617151C67b2350")
-  const reader = await contractAt("Reader", "0x2b43c90D1B727cEe1Df34925bcd5Ace52Ec37694")
+  const reader = await contractAt("Reader", "0xD8BA8174749Cb5Cb6F19fe3f1A90C937272B9632")
 
   const { btc, eth, usdce, usdc, link, uni, usdt, mim, frax, dai } = tokens
   const tokenArr = [ btc, eth, usdce, usdc, link, uni, usdt, mim, frax, dai ]

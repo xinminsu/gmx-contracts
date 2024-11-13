@@ -6,8 +6,8 @@ const network = (process.env.HARDHAT_NETWORK || 'mainnet');
 const tokens = require('./tokens')[network];
 
 async function main() {
-  const usdg = await contractAt("USDG", "0x45096e7aA921f27590f8F19e457794EB09678141")
-  const vault = await contractAt("Vault", "0xDE3590067c811b6F023b557ed45E4f1067859663")
+  const usdg = await contractAt("USDG", "0xBC08B53ba94548194e7a643364773081A923EA0B")
+  const vault = await contractAt("Vault", "0x46198Cf18E114B76C84199736cd0dFF703D532A9")
 
   await sendTxn(usdg.removeVault(vault.address), "usdg.removeVault")
 }

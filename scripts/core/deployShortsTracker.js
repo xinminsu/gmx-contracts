@@ -11,7 +11,7 @@ async function getArbTestnetValues() {
 }
 
 async function getArbValues() {
-  return { vaultAddress: "0x489ee077994B6658eAfA855C308275EAd8097C4A", gasLimit: 12500000 }
+  return { vaultAddress: "0x46198Cf18E114B76C84199736cd0dFF703D532A9", gasLimit: 12500000 }
 }
 
 async function getAvaxValues() {
@@ -30,7 +30,7 @@ async function getValues() {
 
 async function main() {
   const { vaultAddress, gasLimit } = await getValues()
-  const gov = { address: "0x49B373D422BdA4C6BfCdd5eC1E48A9a26fdA2F8b" }
+  const gov = { address: "0xC86aabf86Ac158A1B8814B1a68BB5177f75d9Cb0" }
   const shortsTracker = await deployContract("ShortsTracker", [vaultAddress], "ShortsTracker", { gasLimit })
   await sendTxn(shortsTracker.setGov(gov.address), "shortsTracker.setGov")
 }

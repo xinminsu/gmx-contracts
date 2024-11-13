@@ -3,8 +3,8 @@ const { getFrameSigner, deployContract, contractAt, sendTxn, writeTmpAddresses }
 const network = (process.env.HARDHAT_NETWORK || 'mainnet');
 
 async function getArbValues() {
-  const glp = { address: "0x4277f8F2c384827B5273592FF7CeBd9f2C1ac258" }
-  const glpManager = { address: "0x321F653eED006AD1C29D174e17d96351BDe22649" }
+  const glp = { address: "0x2b8757c8B6BD5D614cbF6c585B8d0e736a1AB77b" }
+  const glpManager = { address: "0x1a9788574b320F73C0aa0182B0d321F3c2A5DC9b" }
   const stakedGlpTracker = await contractAt("RewardTracker", "0x1aDDD80E6039594eE970E5872D247bf0414C8903")
   const feeGlpTracker = await contractAt("RewardTracker", "0x4e971a87900b931fF39d1Aad67697F49835400b6")
 

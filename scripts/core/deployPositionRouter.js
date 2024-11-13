@@ -16,13 +16,13 @@ async function getArbValues(signer) {
   const provider = new ethers.providers.JsonRpcProvider(ARBITRUM_URL)
   const capKeeperWallet = new ethers.Wallet(ARBITRUM_CAP_KEEPER_KEY).connect(provider)
 
-  const vault = await contractAt("Vault", "0x489ee077994B6658eAfA855C308275EAd8097C4A")
+  const vault = await contractAt("Vault", "0x46198Cf18E114B76C84199736cd0dFF703D532A9")
   const timelock = await contractAt("Timelock", await vault.gov(), signer)
   const router = await contractAt("Router", await vault.router(), signer)
   const weth = await contractAt("WETH", tokens.nativeToken.address)
-  const referralStorage = await contractAt("ReferralStorage", "0xe6fab3F0c7199b0d34d7FbE83394fc0e0D06e99d")
-  const shortsTracker = await contractAt("ShortsTracker", "0xf58eEc83Ba28ddd79390B9e90C4d3EbfF1d434da", signer)
-  const shortsTrackerTimelock = await contractAt("ShortsTrackerTimelock", "0xf58eEc83Ba28ddd79390B9e90C4d3EbfF1d434da", signer)
+  const referralStorage = await contractAt("ReferralStorage", "0x10504B85EC9a4001e9589955AAc73A926aebeaC5")
+  const shortsTracker = await contractAt("ShortsTracker", "0x2f30C6d3807134eC0F036887553E2558C6AB039F", signer)
+  const shortsTrackerTimelock = await contractAt("ShortsTrackerTimelock", "0xAae68C5c27Ac560e62447F8E9D14A59E1B4D9b02", signer)
   const depositFee = "30" // 0.3%
   const minExecutionFee = "100000000000000" // 0.0001 ETH
 
@@ -36,8 +36,7 @@ async function getArbValues(signer) {
     shortsTracker,
     shortsTrackerTimelock,
     depositFee,
-    minExecutionFee,
-    positionKeepers
+    minExecutionFee
   }
 }
 
@@ -51,7 +50,7 @@ async function getAvaxValues(signer) {
   const weth = await contractAt("WETH", tokens.nativeToken.address)
   const referralStorage = await contractAt("ReferralStorage", "0x827ED045002eCdAbEb6e2b0d1604cf5fC3d322F8")
   const shortsTracker = await contractAt("ShortsTracker", "0x9234252975484D75Fd05f3e4f7BdbEc61956D73a", signer)
-  const shortsTrackerTimelock = await contractAt("ShortsTrackerTimelock", "0xf58eEc83Ba28ddd79390B9e90C4d3EbfF1d434da", signer)
+  const shortsTrackerTimelock = await contractAt("ShortsTrackerTimelock", "0x2f30C6d3807134eC0F036887553E2558C6AB039F", signer)
   const depositFee = "30" // 0.3%
   const minExecutionFee = "20000000000000000" // 0.02 AVAX
 

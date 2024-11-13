@@ -8,11 +8,11 @@ async function main() {
 
   const vestingDuration = 365 * 24 * 60 * 60
 
-  const glpManager = await contractAt("GlpManager", "0xe1ae4d4b06A5Fe1fc288f6B4CD72f9F8323B107F")
-  const glp = await contractAt("GLP", "0x01234181085565ed162a948b6a5e88758CD7c7b8")
+  const glpManager = await contractAt("GlpManager", "0x1a9788574b320F73C0aa0182B0d321F3c2A5DC9b")
+  const glp = await contractAt("GLP", "0x2b8757c8B6BD5D614cbF6c585B8d0e736a1AB77b")
 
-  const gmx = await contractAt("GMX", "0x62edc0692BD897D2295872a9FFCac5425011c661");
-  const esGmx = await contractAt("EsGMX", "0xFf1489227BbAAC61a9209A08929E4c2a526DdD17");
+  const gmx = await contractAt("GMX", "0xce99b5ED4E52cB26E4a0978eA891e117e27093Fd");
+  const esGmx = await contractAt("EsGMX", "0xCf9150779daB6E371fb4D39C34EeaA60766A601c");
   const bnGmx = await deployContract("MintableBaseToken", ["Bonus GMX", "bnGMX", 0]);
 
   await sendTxn(esGmx.setInPrivateTransferMode(true), "esGmx.setInPrivateTransferMode")

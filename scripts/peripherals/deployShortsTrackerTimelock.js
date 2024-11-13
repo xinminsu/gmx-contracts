@@ -21,7 +21,7 @@ async function getAvaxValues() {
 async function getArbValues() {
   return {
     handlers: [
-      "0x75f6250b9CeED446b2F25385832dF08DB45a90b0", // X Shorts Tracker Keeper
+      "0xAef5A80e92dCda69273F3b07b5012e7794034771", // X Shorts Tracker Keeper
     ]
   }
 }
@@ -45,7 +45,7 @@ async function getValues() {
 async function main() {
   const signer = await getFrameSigner()
 
-  const admin = "0x49B373D422BdA4C6BfCdd5eC1E48A9a26fdA2F8b"
+  const admin = "0x04A7Df5bb513010C7F16d862C3af357cAEdA32F0"
   const { handlers } = await getValues()
 
   const buffer = 60 // 60 seconds

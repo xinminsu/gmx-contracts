@@ -133,14 +133,14 @@ async function main() {
   } = await getValues()
 
   const signers = [
-    "0x82429089e7c86B7047b793A9E7E7311C93d2b7a6", // coinflipcanada
+    "0xC0557CFe9e654Bee1b6B5062Fb08436a4869d064", // coinflipcanada
     "0x1D6d107F5960A66f293Ac07EDd08c1ffE79B548a", // G Account 1
-    "0xD7941C4Ca57a511F21853Bbc7FBF8149d5eCb398", // G Account 2
-    "0xfb481D70f8d987c1AE3ADc90B7046e39eb6Ad64B", // kr
-    "0x6091646D0354b03DD1e9697D33A7341d8C93a6F5", // xhiroz
-    "0x45e48668F090a3eD1C7961421c60Df4E66f693BD", // Dovey
-    "0x881690382102106b00a99E3dB86056D0fC71eee6", // Han Wen
-    "0x2e5d207a4c0f7e7c52f6622dcc6eb44bc0fe1a13" // Krunal Amin
+    "0xEEcA3bdf50676E3a3aB2b25dB3903Bcf325c6e03", // G Account 2
+    "0x975852aebb519BA42c38dF572148C8232F230a0C", // kr
+    "0xF107677589F1483ceD3Ee63630E55087A40feF52", // xhiroz
+    "0x259E6D750506409ea074908fb19e511381227BD0", // Dovey
+    "0xb22819E7fd4525FBB1bf812304Bd632d79552A5e", // Han Wen
+    "0x2Bca75F5c6ac18614d555C9bf88F41e08D390bd4" // Krunal Amin
   ]
 
   if (fastPriceTokens.find(t => !t.fastPricePrecision)) {

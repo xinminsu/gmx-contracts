@@ -53,7 +53,7 @@ async function getValues() {
 async function main() {
   const { contracts } = await getValues()
   const { timelock } = contracts
-  const admin = "0x49B373D422BdA4C6BfCdd5eC1E48A9a26fdA2F8b"
+  const admin = "0x04A7Df5bb513010C7F16d862C3af357cAEdA32F0"
 
   const caller = await deployContract("StabilizeCaller", [])
   const migrator = await deployContract("StabilizeMigrator", [

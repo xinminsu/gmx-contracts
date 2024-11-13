@@ -9,7 +9,7 @@ async function getArbValues() {
   const allContractsList = require("../../data/contractList/arbitrum.json")
   const contractInfoList = [
     // Vault methods: isManager
-    ["Vault", "0x489ee077994B6658eAfA855C308275EAd8097C4A", "Vault"],
+    ["Vault", "0x46198Cf18E114B76C84199736cd0dFF703D532A9", "Vault"],
     // RewardTracker methods: isHandler
     ["StakedGmxTracker", "0x908C4D94D34924765f1eDc22A1DD098397c59dD4", "RewardTracker"],
     ["BonusGmxTracker", "0x4d268a7d4C16ceB5a606c173Bd974984343fea13", "RewardTracker"],
@@ -20,15 +20,15 @@ async function getArbValues() {
     ["GmxVester", "0x199070DDfd1CFb69173aa2F7e20906F26B363004", "Vester"],
     ["GlpVester", "0xA75287d2f8b217273E7FCD7E86eF07D33972042E", "Vester"],
     // GlpManager methods: isHandler
-    ["Old GlpManager", "0x321F653eED006AD1C29D174e17d96351BDe22649", "GlpManager"],
-    ["New GlpManager", "0x3963FfC9dff443c2A94f21b129D429891E32ec18", "GlpManager"],
+    ["Old GlpManager", "0x1a9788574b320F73C0aa0182B0d321F3c2A5DC9b", "GlpManager"],
+    ["New GlpManager", "0x1a9788574b320F73C0aa0182B0d321F3c2A5DC9b", "GlpManager"],
     // MintableBaseToken methods: isHandler, isMinter
-    ["GLP", "0x4277f8F2c384827B5273592FF7CeBd9f2C1ac258", "MintableBaseToken"],
+    ["GLP", "0x2b8757c8B6BD5D614cbF6c585B8d0e736a1AB77b", "MintableBaseToken"],
     ["GMX", "0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a", "MintableBaseToken"],
     ["ES_GMX", "0xf42Ae1D54fd613C9bb14810b0588FaAa09a426cA", "MintableBaseToken"],
     ["BN_GMX", "0x35247165119B69A40edD5304969560D0ef486921", "MintableBaseToken"],
     // USDG methods: vaults
-    ["USDG", "0x45096e7aA921f27590f8F19e457794EB09678141", "USDG"],
+    ["USDG", "0xBC08B53ba94548194e7a643364773081A923EA0B", "USDG"],
     // Timelock methods: isHandler
     ["Timelock", "0xe7E740Fa40CA16b15B621B49de8E9F0D69CF4858", "Timelock"]
   ]

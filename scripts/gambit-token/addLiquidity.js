@@ -1,8 +1,8 @@
 const { contractAt, sendTxn } = require("../shared/helpers")
 
 async function main() {
-  const treasury = await contractAt("Treasury", "0xa44E7252a0C137748F523F112644042E5987FfC7")
-  const gmt = await contractAt("GMT", "0x99e92123eB77Bc8f999316f622e5222498438784")
+  const treasury = await contractAt("Treasury", "0xD0734198D3E00384C56206f85A4927CBEa6B1895")
+  const gmt = await contractAt("GMT", "0xFC9d680b22a9c992fdff80ad90EB75D2ecCcF3aD")
 
   // await sendTxn(treasury.addLiquidity(), "treasury.addLiquidity")
   await sendTxn(gmt.endMigration(), "gmt.endMigration")

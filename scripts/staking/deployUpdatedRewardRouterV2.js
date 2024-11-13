@@ -9,7 +9,7 @@ async function deployForArb() {
   // use AddressZero for the glpManager since GLP mint / burn should be done using
   // the GLP RewardRouter instead
   const glpManager = await contractAt("GlpManager", ethers.constants.AddressZero)
-  const glp = await contractAt("GLP", "0x4277f8F2c384827B5273592FF7CeBd9f2C1ac258")
+  const glp = await contractAt("GLP", "0x2b8757c8B6BD5D614cbF6c585B8d0e736a1AB77b")
 
   const gmx = await contractAt("GMX", "0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a");
   const esGmx = await contractAt("EsGMX", "0xf42Ae1D54fd613C9bb14810b0588FaAa09a426cA");

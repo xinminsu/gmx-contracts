@@ -11,7 +11,7 @@ async function deployForArb() {
   // use AddressZero for the glpManager since GLP mint / burn should be done using
   // the GLP RewardRouter instead
   const glpManager = await contractAt("GlpManager", ethers.constants.AddressZero);
-  const glp = await contractAt("GLP", "0x4277f8F2c384827B5273592FF7CeBd9f2C1ac258");
+  const glp = await contractAt("GLP", "0x2b8757c8B6BD5D614cbF6c585B8d0e736a1AB77b");
 
   const gmx = await contractAt("GMX", "0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a");
   const esGmx = await contractAt("EsGMX", "0xf42Ae1D54fd613C9bb14810b0588FaAa09a426cA");
@@ -58,7 +58,7 @@ async function deployForArb() {
   await sendTxn(rewardRouter.setInRestakingMode(true), "rewardRouter.setInRestakingMode");
   await sendTxn(rewardRouter.setGov(keeper.address), "rewardRouter.setGov");
 
-  const buybackMigratorAdminAddress = "0x49B373D422BdA4C6BfCdd5eC1E48A9a26fdA2F8b"
+  const buybackMigratorAdminAddress = "0x04A7Df5bb513010C7F16d862C3af357cAEdA32F0"
   const oldRewardRouter = await contractAt("RewardRouterV2", "0x159854e14A862Df9E39E1D128b8e5F70B4A3cE9B");
 
   const BuybackMigrator = await deployContract("BuybackMigrator", [
@@ -131,7 +131,7 @@ async function deployForAvax() {
   await sendTxn(rewardRouter.setInRestakingMode(true), "rewardRouter.setInRestakingMode");
   await sendTxn(rewardRouter.setGov(keeper.address), "rewardRouter.setGov");
 
-  const buybackMigratorAdminAddress = "0x49B373D422BdA4C6BfCdd5eC1E48A9a26fdA2F8b"
+  const buybackMigratorAdminAddress = "0x04A7Df5bb513010C7F16d862C3af357cAEdA32F0"
   const oldRewardRouter = await contractAt("RewardRouterV2", "0xa192D0681E2b9484d1fA48083D36B8A2D0Da1809");
 
   const BuybackMigrator = await deployContract("BuybackMigrator", [

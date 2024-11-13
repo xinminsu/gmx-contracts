@@ -11,7 +11,7 @@ async function approveTokens({ network }) {
   }
 
   const token = "0x62edc0692BD897D2295872a9FFCac5425011c661"
-  const spender = "0x49B373D422BdA4C6BfCdd5eC1E48A9a26fdA2F8b"
+  const spender = "0x04A7Df5bb513010C7F16d862C3af357cAEdA32F0"
   const amount = "1000000000000000000"
 
   await signExternally(await timelock.populateTransaction[method](token, spender, amount));

@@ -6,7 +6,7 @@ const network = (process.env.HARDHAT_NETWORK || 'mainnet');
 const { AddressZero } = ethers.constants
 
 async function runForArbitrum() {
-  const admin = "0x49B373D422BdA4C6BfCdd5eC1E48A9a26fdA2F8b"
+  const admin = "0x04A7Df5bb513010C7F16d862C3af357cAEdA32F0"
   const rewardManager = { address: AddressZero }
   const buffer = 24 * 60 * 60
   const longBuffer = 7 * 24 * 60 * 60
@@ -26,7 +26,7 @@ async function runForArbitrum() {
 }
 
 async function runForAvax() {
-  const admin = "0x49B373D422BdA4C6BfCdd5eC1E48A9a26fdA2F8b"
+  const admin = "0x04A7Df5bb513010C7F16d862C3af357cAEdA32F0"
   const rewardManager = { address: ethers.constants.AddressZero }
   const buffer = 24 * 60 * 60
   const longBuffer = 7 * 24 * 60 * 60

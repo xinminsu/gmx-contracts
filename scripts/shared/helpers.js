@@ -56,7 +56,7 @@ function getChainId(network) {
 
 async function getFrameSigner(options) {
   try {
-    const frame = new ethers.providers.JsonRpcProvider("http://127.0.0.1:1248")
+    const frame = new ethers.providers.JsonRpcProvider(ARBITRUM_URL)
     const signer = frame.getSigner()
     let networkToCheck = network
     if (options && options.network) {

@@ -3,8 +3,8 @@ const { expandDecimals } = require("../../test/shared/utilities")
 const { getAccounts } = require("../../data/airdrop")
 
 async function main() {
-  const gmt = await contractAt("GMT", "0x99e92123eB77Bc8f999316f622e5222498438784")
-  const batchSender = await contractAt("BatchSender", "0x04c5B7575De2E00079e11578bF00F09C07007Bda")
+  const gmt = await contractAt("GMT", "0xce99b5ED4E52cB26E4a0978eA891e117e27093Fd")
+  const batchSender = await contractAt("BatchSender", "0x1ec628Eb57aCe33C1A396C430D73dFB455AB5149")
   const accounts = getAccounts()
 
   // await sendTxn(gmt.beginMigration(), "gmt.beginMigration")

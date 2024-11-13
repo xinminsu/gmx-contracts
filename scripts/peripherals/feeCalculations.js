@@ -221,8 +221,8 @@ async function getGmxPrice(ethPrice) {
 
 async function getArbValues() {
   const signer = signers.arbitrum
-  const vault = await contractAt("Vault", "0x489ee077994B6658eAfA855C308275EAd8097C4A", signer)
-  const reader = await contractAt("Reader", "0x2b43c90D1B727cEe1Df34925bcd5Ace52Ec37694", signer)
+  const vault = await contractAt("Vault", "0x46198Cf18E114B76C84199736cd0dFF703D532A9", signer)
+  const reader = await contractAt("Reader", "0xD8BA8174749Cb5Cb6F19fe3f1A90C937272B9632", signer)
 
   const readerV2 = new ethers.Contract("0x38d91ED96283d62182Fc6d990C24097A918a4d9b", ReaderV2.abi, providers.arbitrum)
   const dataStore = new ethers.Contract("0xFD70de6b91282D8017aA4E741e9Ae325CAb992d8", DataStore.abi, providers.arbitrum)
@@ -256,7 +256,7 @@ async function getArbValues() {
   const stakedGmx = await contractAt("Token", "0xd2D1162512F927a7e282Ef43a362659E4F2a728F", signer)
   const stakedGmxSupply = await stakedGmx.totalSupply()
   const { totalTransferAmount: keeperCosts } = await getArbKeeperValues()
-  const glpManager = await contractAt("GlpManager", "0x321F653eED006AD1C29D174e17d96351BDe22649", signer)
+  const glpManager = await contractAt("GlpManager", "0x1a9788574b320F73C0aa0182B0d321F3c2A5DC9b", signer)
   const glpAum = await glpManager.getAum(true)
 
   return { vault, reader, tokens, tokenInfo, nativeTokenPrice, feesUsd, feesUsdV2, totalFeesUsdV2, stakedGmx, stakedGmxSupply, keeperCosts, glpManager, glpAum, totalGmxBalance, totalNativeTokenBalance }

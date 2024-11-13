@@ -11,7 +11,7 @@ async function main() {
   const gmtUsdgGmxIou = await deployContract("GmxIou", [gmxMigrator.address, "GMT-USDG GMX (IOU)", "GMT-USDG:GMX"])
   const xgmtUsdgGmxIou = await deployContract("GmxIou", [gmxMigrator.address, "xGMT-USDG GMX (IOU)", "xGMT-USDG:GMX"])
 
-  const gmt = { address: "0x99e92123eB77Bc8f999316f622e5222498438784" }
+  const gmt = { address: "0xFC9d680b22a9c992fdff80ad90EB75D2ecCcF3aD" }
   const xgmt = { address: "0xe304ff0983922787Fd84BC9170CD21bF78B16B10" }
   const gmtUsdg = { address: "0xa41e57459f09a126F358E118b693789d088eA8A0" }
   const xgmtUsdg = { address: "0x0b622208fc0691C2486A3AE6B7C875b4A174b317" }
@@ -21,9 +21,9 @@ async function main() {
   const gmxPrice = bigNumberify(2 * precision)
 
   const signers = [
-    "0x45e48668F090a3eD1C7961421c60Df4E66f693BD", // Dovey
-    "0x881690382102106b00a99E3dB86056D0fC71eee6", // Han Wen
-    "0x2e5d207a4c0f7e7c52f6622dcc6eb44bc0fe1a13" // Krunal Amin
+    "0x259E6D750506409ea074908fb19e511381227BD0", // Dovey
+    "0xb22819E7fd4525FBB1bf812304Bd632d79552A5e", // Han Wen
+    "0x2Bca75F5c6ac18614d555C9bf88F41e08D390bd4" // Krunal Amin
   ]
 
   const gmtPrice = bigNumberify(10.97 * precision)

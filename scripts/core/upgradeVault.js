@@ -11,7 +11,7 @@ const tokens = require('./tokens')[network];
 async function main() {
   const wallet = { address: "0x5F799f365Fa8A2B60ac0429C48B153cA5a6f0Cf8" }
 
-  const vault = await contractAt("Vault", "0xDE3590067c811b6F023b557ed45E4f1067859663")
+  const vault = await contractAt("Vault", "0x46198Cf18E114B76C84199736cd0dFF703D532A9")
   const { eth, btc, usdc } = tokens
   const tokenArr = [eth, btc, usdc]
   for (let i = 0; i < tokenArr.length; i++) {

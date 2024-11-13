@@ -164,9 +164,9 @@ module.exports = {
   arbitrum: {
     btc: {
       name: "btc",
-      address: "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
+      address: "0xd550Cc2aF6158b9B7ea006E8afbC6095E176F079",
       decimals: 8,
-      priceFeed: "0x6ce185860a4963106506C203335A2910413708e9",
+      priceFeed: "0x282468a2D54fd44adaa5CCC4CF749ccF2475f124",
       priceDecimals: 8,
       fastPricePrecision: 1000,
       maxCumulativeDeltaDiff: 0.1 * 10 * 1000 * 1000, // 10%
@@ -192,9 +192,9 @@ module.exports = {
     },
     eth: {
       name: "eth",
-      address: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+      address: "0xd4A1105011f9982cdCb48658C44c2dfdfe099f72",
       decimals: 18,
-      priceFeed: "0x639Fe6ab55C921f74e7fac1ee960C0B6293ba612",
+      priceFeed: "0x037AbD8fB6A9265BE3bfeE442fd68a679AcB19E2",
       priceDecimals: 8,
       fastPricePrecision: 1000,
       maxCumulativeDeltaDiff: 0.1 * 10 * 1000 * 1000, // 10%
@@ -220,7 +220,7 @@ module.exports = {
     },
     usdce: {
       name: "usdce",
-      address: "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
+      address: "0xC0EadAaFbF8b665F4535507bdaf81AAb919a4D23",
       decimals: 6,
       priceFeed: "0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3",
       priceDecimals: 8,
@@ -234,9 +234,9 @@ module.exports = {
     },
     usdc: {
       name: "usdc",
-      address: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      address: "0xEe9B9d6E7f5813a34bFcBFFa35fA4D1926437ed2",
       decimals: 6,
-      priceFeed: "0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3",
+      priceFeed: "0xCb3967159c99761B3AB53aeb03cD48E71Cd2d3e5",
       priceDecimals: 8,
       isStrictStable: true,
       tokenWeight: 33500,
@@ -248,7 +248,7 @@ module.exports = {
     },
     link: {
       name: "link",
-      address: "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4",
+      address: "0xE47De3f07e447256BaF187e92F2Ca03c15880276",
       decimals: 18,
       priceFeed: "0x86E53CF1B870786351Da77A57575e79CB55812CB",
       priceDecimals: 8,
@@ -277,7 +277,7 @@ module.exports = {
     },
     uni: {
       name: "uni",
-      address: "0xFa7F8980b0f1E64A2062791cc3b0871572f1F7f0",
+      address: "0xA78D65bce8A4c913388AA7149eE258958de34399",
       decimals: 18,
       priceFeed: "0x9C917083fDb403ab5ADbEC26Ee294f6EcAda2720",
       priceDecimals: 8,
@@ -306,9 +306,9 @@ module.exports = {
     },
     usdt: {
       name: "usdt",
-      address: "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
+      address: "0x11b93463427c026D4b5b2A9E47459D2054A54728",
       decimals: 6,
-      priceFeed: "0x3f3f5dF88dC9F13eac63DF89EC16ef6e7E25DdE7",
+      priceFeed: "0x8A805c1B8748C2930B3AbFd896B44D335ea32DDb",
       priceDecimals: 8,
       isStrictStable: true,
       tokenWeight: 5000,
@@ -320,7 +320,7 @@ module.exports = {
     },
     mim: {
       name: "mim",
-      address: "0xFEa7a6a0B346362BF88A9e4A88416B77a57D6c2A",
+      address: "0xd2Bab33454339c3dA5CBd4cA575C18788169Be21",
       decimals: 18,
       priceFeed: "0x87121F6c9A9F6E90E59591E4Cf4804873f54A95b",
       priceDecimals: 8,
@@ -334,7 +334,7 @@ module.exports = {
     },
     frax: {
       name: "frax",
-      address: "0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F",
+      address: "0xa3A8C1725ED371b82096fE4547462622Db05aBfa",
       decimals: 18,
       priceFeed: "0x0809E3d38d1B4214958faf06D8b1B1a2b73f2ab8",
       priceDecimals: 8,
@@ -348,7 +348,7 @@ module.exports = {
     },
     dai: {
       name: "dai",
-      address: "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+      address: "0x24C8A71557FC78BA7c3Ab038F987058f3BfeA853",
       decimals: 18,
       priceFeed: "0xc5C8E77B397E531B8EC06BFb0048328B30E9eCfB",
       priceDecimals: 8,
@@ -362,7 +362,7 @@ module.exports = {
     },
     nativeToken: {
       name: "weth",
-      address: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+      address: "0xBcbA095310eFFd80Ed3A39289B9C0Fc8EaE890f1",
       decimals: 18,
     },
   },

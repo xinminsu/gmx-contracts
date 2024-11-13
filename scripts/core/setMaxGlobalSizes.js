@@ -25,7 +25,7 @@ async function getArbValues() {
   const { btc, eth, link, uni } = tokens
   const tokenArr = [btc, eth, link, uni]
 
-  const vaultAddress = "0x489ee077994B6658eAfA855C308275EAd8097C4A";
+  const vaultAddress = "0x46198Cf18E114B76C84199736cd0dFF703D532A9";
 
   return { wallet, positionContracts, tokenArr, vaultAddress }
 }

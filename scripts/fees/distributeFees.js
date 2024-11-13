@@ -401,7 +401,7 @@ async function distributeFees({ steps }) {
   const routers = {
     arbitrum: await contractAt(
       "Router",
-      "0xaBBc5F99639c9B6bCb58544ddf04EFA6802F4064",
+      "0x8e013B0814361278B38066fd8d8A541A273dc610",
       feeKeepers.arbitrum
     ),
     avax: await contractAt(
